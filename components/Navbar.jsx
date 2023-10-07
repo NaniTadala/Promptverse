@@ -196,7 +196,7 @@ export default function Navbar() {
                                     type="button"
                                     onClick={() => {
                                         setToggleDropdown(false);
-                                        signOut();
+                                        router.push("/signin");
                                     }}
                                     variant="solid"
                                 >
