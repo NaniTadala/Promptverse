@@ -91,7 +91,7 @@ export default function JoySignInSideTemplate() {
     }
 
     function handleGoogleSignin() {
-        signIn("google", { callbackUrl: "http://localhost:3000/" });
+        signIn("google", { callbackUrl: "/" });
     }
 
     return (

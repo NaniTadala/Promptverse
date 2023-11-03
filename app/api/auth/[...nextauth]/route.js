@@ -6,6 +6,7 @@ import { compare } from "bcrypt";
 import User from "@/models/user";
 import UserData from "@/models/userData";
 
+
 export const handler = NextAuth({
     providers: [
         GoogleProvider({
@@ -47,7 +48,7 @@ export const handler = NextAuth({
             const { email, name, image } = user;
 
             try {
-                const res = await fetch('/api/users', {
+                const res = await fetch('http://localhost:3000/api/users', {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",

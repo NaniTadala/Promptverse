@@ -4,8 +4,7 @@ import { connectToDB } from "@/utils/database";
 
 export const POST = async (req) => {
     const { email, username, image } = await req.json();
-    // console.log(email, password);
-    // return new Response(JSON.stringify({ message: "Hey mann" }), { status: 200 })
+
     try {
         await connectToDB();
         const existingUser = await UserData.findOne({ email: email });

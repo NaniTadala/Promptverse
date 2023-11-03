@@ -15,7 +15,7 @@ const Posts = ({ params }) => {
         };
 
         fetchPost();
-    }, []);
+    });
 
     return (
         <Sheet
@@ -82,4 +82,4 @@ const Posts = ({ params }) => {
     );
 };
 
-export default page;
+export default Posts;
