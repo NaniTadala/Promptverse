@@ -48,7 +48,7 @@ export const handler = NextAuth({
             const { email, name, image } = user;
 
             try {
-                const res = await fetch('http://localhost:3000/api/users', {
+                const res = await fetch('https://promptverse-tan.vercel.app/api/users', {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
