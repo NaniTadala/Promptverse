@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Sheet, Typography, FormControl, FormLabel, Card } from "@mui/joy";
 import Navbar from "@/components/Navbar";
 
-const page = ({ params }) => {
+const Posts = ({ params }) => {
     const [post, setPost] = useState({});
 
     useEffect(() => {
